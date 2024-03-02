@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style type="text/css" media="screen">
+        body {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            text-decoration-color: white;
+            font-size: 16px;
+            padding: 15px;
+        }
+        .label {
+            text-align: left;
+            width: 100%;
+            display: inline-block;
+        }
+        .text_body {
+            padding-left: 20px;
+        }
+        .verify {
+            width: 100%;
+            justify-content: center;
+            margin-bottom: 25px;
+        }
+        .verifyButton {
+            text-decoration: none;
+            padding: 10px;
+            background-color: #4e4ebd;
+            text-align: center;
+            color: #fff !important;
+            width: 75px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    
+   
+    <p style="padding-left: 25px; padding-top: 10px;">
+     
+        <p>Full Name : <span style="padding-left: 10px;"><%=name%></span></p>
+        <p>Email Address: <span style="padding-left: 10px;"><%=email%></span></p>
+        <p>Contact Number : <span style="padding-left: 10px;"><%=phone%></span></p>
+         
+           <% if (typeof jobs !='undefined') { %>
+            <p>Apply Jobs : <span style="padding-left: 10px;"><%=jobs%></span></p>
+            <% } %>
+
+            <% if (typeof appliedFor !='undefined') { %>
+                <p>Apply For : <span style="padding-left: 10px;"><%=appliedFor%></span></p>
+                <% } %>
+            
+            <% if (currentRole) { %>
+                <p>Current Role : <span style="padding-left: 10px;"><%=currentRole%></span></p>
+                <% } %>
+                
+                <% if (currentCompany) { %>
+                    <p>Current Company  : <span style="padding-left: 10px;"><%=currentCompany%></span></p>
+                    <% } %>   
+                    <% if (message) { %>
+                        <p>Message  : <span style="padding-left: 10px;"><%=message%></span></p>
+                        <% } %>  
+                        <% if (file) { %>
+                            <p>Resume  : <span style="padding-left: 10px;">  <%=file%></span></p>
+                            <% } %>  
+
+
+        
+      
+    </p>
+</body>
+</html>

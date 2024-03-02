@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style type="text/css" media="screen">
+        body {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            text-decoration-color: white;
+            font-size: 16px;
+            padding: 15px;
+        }
+        .label {
+            text-align: left;
+            width: 100%;
+            display: inline-block;
+        }
+        .text_body {
+            padding-left: 20px;
+        }
+        .verify {
+            width: 100%;
+            justify-content: center;
+            margin-bottom: 25px;
+        }
+        .verifyButton {
+            text-decoration: none;
+            padding: 10px;
+            background-color: #4e4ebd;
+            text-align: center;
+            color: #fff !important;
+            width: 75px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    
+   
+    <p style="padding-left: 25px; padding-top: 10px;">
+        <!-- <% if (loanappid) { %>
+        <p>Application Number : <span style="padding-left: 10px;"><%=loanappid%></span></p>
+        <% } %> -->
+        <p>Full Name : <span style="padding-left: 10px;"><%=userName%></span></p>
+        <p>Email Address: <span style="padding-left: 10px;"><%=email%></span></p>
+        <p>Contact Number : <span style="padding-left: 10px;"><%=phone%></span></p>
+            <% if (address) { %>
+            <p>Address : <span style="padding-left: 10px;"><%=address%></span></p>
+            <% } %>
+            
+            <% if (state) { %>
+            <p>State : <span style="padding-left: 10px;"><%=state%></span></p>
+            <% } %>
+
+            <% if (pin) { %>
+            <p>Pin Code : <span style="padding-left: 10px;"><%=pin%></span></p>
+            <% } %>        
+        
+        <% if (concern) { %>
+        <p>Remarks : <span style="padding-left: 10px;"><%=concern%></span></p>
+        <% } %>
+    </p>
+</body>
+</html>
